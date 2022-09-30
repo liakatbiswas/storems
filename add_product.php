@@ -2,6 +2,8 @@
 include 'connection.php';
 $title = "Add Product";
 include 'header.php';
+include 'my_function.php';
+
 ?>
 
 <section class="container-fluid">
@@ -45,15 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-6 mb-3">
               <label for="product_category" class="form-label">Product Category</label>
-
               <select name="product_category" id="product_category" class="form-select">
-                <!-- <option selected>Select Product's Category</option> -->
-                <?php
-$sql   = "SELECT * FROM category";
-$query = $conn->query($sql);
-while ($data = $query->fetch_assoc()) { ?>
-                <option value="<?php echo $data['cat_id']; ?>"><?php echo $data['cat_name']; ?></option>
-                <?php } ?>
+                <?php data_liat('category', 'cat_id', 'cat_name'); ?>
               </select>
             </div>
 

@@ -26,6 +26,7 @@
               <a href="./add_product.php" class="btn btn-primary ml-3">Add Product</a>
               <a href="./product_list.php" class="btn btn-primary ml-3">Product List</a>
               <a href="./add_store_product.php" class="btn btn-primary ml-3">Store Product</a>
+              <a href="./list_of_entry_product.php" class="btn btn-primary ml-3">Entry Product List</a>
             </header>
 
           </div>
